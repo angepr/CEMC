@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/css/event.css">
+    <title>Code en mi Cole</title>
+
+
+<body>
+<header>
+ <!-- Versión móvil -->
+    <div class="menu-mobile">
+        <div class="barra">
+        <a href="../home.html" class="logo">
+            <img src="./Resources/imagenes/Recurso 11@3x.png" alt="Logo Code en mi Cole">
+        </a>
+        <a href="#" id="btnMenu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        </div>
+        <nav class="menu-principal">
+            <a href="../home.html" class="volver-arriba">INICIO</a>
+            <a href="./products.html">CURSOS</a>
+            <a href=".#">EVENTOS</a>
+            <a href="./about-us.html">CONÓCENOS</a>
+        </nav>
+    </div>
+
+  <!-- Versión escritorio -->
+    <div class="menu-bar-pc">
+        <a href="../home.html" class="logo">
+            <img src="./Resources/imagenes/Recurso 11@3x.png" alt="Code en mi Cole">
+        </a>
+
+        <nav class="menu-principal">
+            <a href="./home.html" class="volver-arriba">INICIO</a>
+            <a href="./products.html" class="scroll-suave">CURSOS</a>
+            <a href="#" class="scroll-acercaDe">EVENTOS</a>
+            <a href="./about-us.html" class="scroll-equipo">CONÓCENOS</a>
+            <!-- <a class="btn-login" href="./html/login.html">INICIAR SESIÓN</a>
+            <a class="btn-sign" href="./html/sign-in.html">REGISTRATE</a> -->
+        </nav>
+
+        <div class="top-redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+    <div class="fixed-header" id="fixedHeader">
+        <a href="../home.html"  class="logo"><img src="./Resources/imagenes/Recurso 11@3x.png" alt="Logo Code en mi Cole"></a>
+        <nav class="menu-principal">
+            <a href="../home.html">INICIO</a>
+            <a href="./products.html">CURSOS</a>
+            <a href="#">EVENTOS</a>
+            <a href="./about-us.html">CONÓCENOS</a>
+        </nav>
+        <div class="top-redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a><br>
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a><br>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    <hr class="line">
+<!-- banner -->
+    <section class="portada">
+        <div class="portada-principal">
+            <div class="elementos-portada">
+                <div id="carousel-container">
+                    <div id="carousel">
+                        <div class="slides slide-1">
+                            <div class="slide-data">
+                                <h1 style="color: #FFF;">Hora del Código</h1>
+                                <p>Todos pueden programar desde edad escolar.</p>
+                            </div>
+                        </div>
+                        <div class="slides slide-2">
+                            <div class="slide-data">
+                                <h1 style="color: #10F9BA;">Computer Science Education Conference</h1>
+                                <p>Llevemos el pensamiento computacional a la currícula escolar.</p>
+                            </div>
+                        </div>
+                        <div class="slides slide-3">
+                            <div class="slide-data">
+                                <h1 style="color: #FE972C;">Talleres gratuitos</h1>
+                                <p>Aprender a programar desde cero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>            
+            <div class="portada-texto">
+                <div class="elementos-texto">
+                    <h2>Eventos y talleres para el futuro</h2>
+                    <p>Inscríbete, todos nuestros eventos son <a>gratis</a></p>
+                    <br>
+                    <div class="forms" id="forms">
+                        <form action="">
+                            <div>
+                            <label for="name">Nombres completos</label>
+                                <input type="text" name="name" id="name">
+                                <p class="error">Por favor escribe tu nombre</p>
+                            </div>
+                            <div>
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" name="email" id="email">
+                                <p class="error">Por favor escribe tu correo electrónico</p>
+                            </div>
+                            <div>
+                                <label for="phone">Número de teléfono</label>
+                                <input type="text" name="phone" id="phone">
+                                <p class="error">Por favor escribe tu número de teléfono</p>
+                            </div>
+                            <div>
+                                <input type="submit" name="send" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+        </div>
+                 
+    </section>
+
+
+<!-- Eventos en curso -->
+<section class="event" id="event">
+    <div class="contenedor">
+        <div class="titulo-seccion">
+            <h2 style="color:#816AEC;">Conoce nuestros eventos</h2>
+            <p>Para aprender a programar</p>
+        </div>
+        <div class="columnas">
+            <div class="categorias">
+                <ul class="categorias-list">
+                   <a href=""><li class="cat-eventos-online">EVENTOS RECIENTES</li></a>
+                   <hr>
+                </ul>
+            </div> <!-- post-list-->
+            <div class="eventos-nuevos-list" id="idContentEvento"> 
+                <!-- Producto -->
+                <div class="evento">
+                    <div class="evento-header">
+                        <div class="evento-img-1">
+                            <img src="..." alt="">
+                        </div>
+                    </div>
+                    <div class="evento-body">
+                        <span style="color: #F8002D;">fecha</span>
+                        <h5>Producto uno</h5>
+                        <p>Lorem impsum</p>
+                        <a href="" class="evento-link">Inscribirse</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Eventos pasado -->
+    <section class="eventos-pasados">
+        <div class="contenedor">
+            <div class="titulo-seccion">
+                <h2>Talleres anteriores</h2>
+            </div>
+            <div class="grid-evento">
+                <div class="grid-evento1">
+                    <div class="head-grid-evento">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/kdP4j8HdXto?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="evento-pasado">
+                        <h5 style="text-align:center">Exposición de Proyectos</h5>
+                    </div>
+                </div>
+                <div class="grid-evento2">
+                    <div class="head-grid-evento">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/kdP4j8HdXto?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="evento-pasado">
+                        <h5 style="text-align:center">Exposición de Proyectos</h5>
+                    </div>
+                </div>
+                <div class="grid-evento3">
+                    <div class="head-grid-evento">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/kdP4j8HdXto?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="evento-pasado">
+                        <h5 style="text-align:center">Exposición de Proyectos</h5>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Pie de página -->
+    <footer>
+        <div class="copy">
+            <div class="logo-footer">
+            <img src="Resources/imagenes/logo sin complemento.png" alt="">
+            </div>
+            <p>Code en mi Cole</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="footer-redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <section class="footer2">
+            <section class="telefono">
+                <div class="espacio-der">
+                    <i class="fa-solid fa-phone" height="30px"></i>
+                </div>
+                <div>
+                    <a>+51 974 210 246</a>
+                </div>
+            </section>
+            <section class="contacto">
+                <div class="espacio-der">
+                    <i class="fa-solid fa-envelope" height="30px"></i>
+                </div>
+                <div>
+                    <a>contacto@codenmicole.com</a>
+                </div>
+            </section>
+            <section class="direccion"> 
+                <div class="espacio-der">
+                    <i class="fa-solid fa-location-dot" height="30px"></i>
+                </div>
+                <div>
+                    <a>Av. Salaverry 301</a>
+                    <a>Arequipa - Perú</a>
+                </div>
+            </section>
+    
+        </section>
+      </footer>
+    
+</body>
+<script src="./Resources/frameworks/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/233512eda9.js" crossorigin="anonymous"></script>
+<script src="./Resources/js/eventos.js"></script>
+<script src="./Resources/js/app.js"></script>
+</html>

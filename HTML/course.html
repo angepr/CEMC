@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/css/curso-detalle.css">
+    <title>Code en mi Cole</title>
+
+
+<body>
+<header>
+ <!-- Versión móvil -->
+    <div class="menu-mobile">
+        <div class="barra">
+        <a href="../home.html" class="logo">
+            <img src="./Resources/imagenes/logo sin complemento.png" alt="Logo Code en mi Cole">
+        </a>
+        <a href="#" id="btnMenu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        </div>
+        <nav class="menu-principal">
+            <a href="../home.html" class="volver-arriba">INICIO</a>
+            <a href="./products.html">CURSOS</a>
+            <a href="./events.html">EVENTOS</a>
+            <a href="./about-us.html">CONÓCENOS</a>
+            <a href="./html/login.html" class="login">INICIAR SESIÓN</a>
+            <a href="./html/sign-in.html" class="register">REGISTRATE</a>
+        </nav>
+    </div>
+
+  <!-- Versión escritorio -->
+    <div class="menu-bar-pc">
+        <a href="../home.html" class="logo">
+            <img src="./Resources/imagenes/logo sin complemento.png" alt="Code en mi Cole">
+        </a>
+
+        <nav class="menu-principal">
+            <a href="../home.html" class="volver-arriba">INICIO</a>
+            <a href="./products.html" class="scroll-suave">CURSOS</a>
+            <a href="./events.html" class="scroll-acercaDe">EVENTOS</a>
+            <a href="./about-us.html" class="scroll-equipo">CONÓCENOS</a>
+            <!-- <a class="btn-login" href="./html/login.html">INICIAR SESIÓN</a>
+            <a class="btn-sign" href="./html/sign-in.html">REGISTRATE</a> -->
+        </nav>
+
+        <div class="top-redes">
+            <a href="https://wa.link/zl6npq" class="register">Registrate</a>
+            <a href="#"class="login">Iniciar sesión</a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+    <div class="fixed-header" id="fixedHeader">
+        <a href="../home.html"  class="logo"><img src="./Resources/imagenes/logo sin complemento.png" alt="Logo Code en mi Cole"></a>
+        <nav class="menu-principal">
+            <a href="../home.html">INICIO</a>
+            <a href="./products.html">CURSOS</a>
+            <a href="./events.html">EVENTOS</a>
+            <a href="./about-us.html">CONÓCENOS</a>
+            <a href="./login.html">INICIAR SESIÓN</a>
+            <a href="./sign-in.html">REGISTRATE</a>
+        </nav>
+        <div class="top-redes">
+            <a href="https://wa.link/zl6npq" class="register">Registrate</a>
+            <a href="#" class="login">Iniciar sesión</a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </div>
+    <hr class="line">
+
+<!-- descripcion -->
+    <section class="course">
+        <div class="contenedor">
+            <div class="contenedor-curso">
+                <div class="curso-contenido">
+                    <div class="curso-titulo" id="curso-titulo">
+                        <h2 id="titulo-curso">Nombre del curso</h2>
+                        <div class="info-general" style=" margin-bottom: 30px;">
+                            <div class="icon-des">
+                                <i class="fa-regular fa-calendar-check"></i> Inicio: <br><span id="inicio-curso"> </span>
+                            </div>
+                            <div class="icon-des">
+                                <i class="fa-regular fa-clock"></i> Horario: <br><span id="horario-curso"></span>
+                            </div>
+                            <div class="icon-des">
+                                <i class="fa-regular fa-keyboard"></i> Modalidad: <br><span id="modalidad-curso"></span>
+                            </div>
+                            <div class="icon-des">
+                                <i class="fa-brands fa-readme"></i> Duración: <br><span id="duracion-curso"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style=" margin-bottom: 30px;" class="curso-descripcion" id="curso-descripcion">
+                        <h4>Descripcion del curso</h4><br>
+                        <p id="descripcion-curso"></p>
+                    </div>
+                    <div style=" margin-bottom: 30px;" class="curso-publico" id="curso-publico">
+                        <h4>¿A quién va dirigido?</h4><br>
+                        <p id="publico-curso">para niños de 5 a 8 años</p>
+                    </div>                     
+                    <div style=" margin-bottom: 30px;" class="curso-requisitos" id="curso-requisitos">
+                        <h4>Requisitos técnicos</h4><br>
+                            <ul>
+                                <li>Computadora o laptop con Windows 7 o superior.</li>
+                                <li>Conexión a internet.</li>
+                                <li>Navegador web (Google Chrome u otro).</li>  
+                                <li>Aplicación Zoom.</li>
+                            </ul>
+                    </div>
+                    <div style=" margin-bottom: 30px;" class="curso-docente">
+                        <h4>Nombre de docente</h4><br>
+                        <p id="docente-curso">X</p>
+                    </div>
+                    <div class="curso-curricula">
+                        <h4>¿Qué aprenderás?</h4><br>
+                        <ul><h6>Unidad I: Ciencia de la Computación y algoritmos</h6>
+                            <li>Introducción a la Ciencia de la Computación</li>
+                            <li>Introducción al pensamiento computacional</li>
+                            <li>Ciencia de la computación en la vida diaria</li>
+                            <li>Introducción a los algoritmos</li>
+                            <li>Práctica de algoritmos</li>
+                        </ul>
+                        <ul><h6>Unidad II: Bucles y eventos</h6>
+                            <li>Teoría y práctica sobre Eventos</li>
+                            <li>Práctica en code.org</li>
+                            <li>Teoría y práctica sobre Bucles</li>
+                            <li>Práctica en code.org</li>
+                            <li>Introducción a Scratch Jr.</li>
+                        </ul>
+                        <ul><h6>Unidad III: Eventos y proyecto</h6>
+                            <li>Uso de los temas aprendidos en Scratch</li>
+                            <li>Realización de ejemplos en Scratch JR</li>
+                            <li>Explicación del proyecto final</li>
+                            <li>Desarrollo y finalización del proyecto</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curso-pago curso-pago-sticky">
+                    <div class="pago-caja">
+                        <h2 id="precio-curso">S/ .Precio</h2>
+                    </div>
+                    <div class="precio">
+                        <a href="https://wa.link/zl6npq" id="pagar">Comprar</a>
+                    </div>
+                    
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+    
+        <!-- Pie de página -->
+    <footer>
+        <div class="copy">
+            <div class="logo-footer">
+            <img src="Resources/imagenes/logo sin complemento.png" alt="">
+            </div>
+            <p>Code en mi Cole</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="footer-redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <section class="footer2">
+            <section class="telefono">
+                <div class="espacio-der">
+                    <i class="fa-solid fa-phone" height="30px"></i>
+                </div>
+                <div>
+                    <a>+51 974 210 246</a>
+                </div>
+            </section>
+            <section class="contacto">
+                <div class="espacio-der">
+                    <i class="fa-solid fa-envelope" height="30px"></i>
+                </div>
+                <div>
+                    <a>contacto@codenmicole.com</a>
+                </div>
+            </section>
+            <section class="direccion"> 
+                <div class="espacio-der">
+                    <i class="fa-solid fa-location-dot" height="30px"></i>
+                </div>
+                <div>
+                    <a>Av. Salaverry 301</a>
+                    <a>Arequipa - Perú</a>
+                </div>
+            </section>
+    
+        </section>
+        </footer>
+    
+</body>
+<script src="https://kit.fontawesome.com/233512eda9.js" crossorigin="anonymous"></script>
+<script src="./Resources/frameworks/jquery-3.6.0.min.js"></script>
+<script src="./Resources/js/app.js"></script>
+<script src="./Resources/js/cursos.js"></script>
+<script src="./Resources/js/productos.js"></script>
+</html>

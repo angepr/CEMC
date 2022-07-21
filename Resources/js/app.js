@@ -1,0 +1,91 @@
+const productos = [
+    {
+        id: 1,
+        nombre: "Creación de videojuegos para niños",
+        precio: "S/. 250",
+        horario: "S 9:00 a 10:30 am",
+        modalidad: "Sincrónico y clases prácticas",
+        duracion: "8 sesiones de 1.30h",
+        docente: "Ruth Huillca",
+        fechaInicio: "09 de julio",
+        date: new Date (2022, 07, 16),
+        imagen: 'curso 1.png',
+        descripcion: "Este taller busca potenciar el desarrollo creativo y el pensamiento computacional de tus hijos, de manera ágil y divertida. Los pequeños tendrán su primera experiencia creando tecnología, desarrollando al máximo su pensamiento lógico.",
+        publico: "Dirigido a niños de 5 a 8 años",
+        stock: 5        
+    },
+    {
+        id: 2,
+        nombre: "Creación de aplicaciones para niños",
+        precio: "S/ .250 o $70",
+        horario: "S 4:00 a 5:30 pm",
+        modalidad: "Sincrónico y clases prácticas",
+        duracion: "8 sesiones de 1.30h",
+        docente: "Ruth Huillca",
+        fechaInicio: "09 de julio",
+        date: new Date (2022, 08, 16),
+        imagen: 'curso 2.png',
+        descripcion: "Este taller busca potenciar el desarrollo creativo y el pensamiento computacional de tus hijos, de manera ágil y divertida. Los pequeños tendrán su primera experiencia creando tecnología, desarrollando al máximo su pensamiento lógico.",
+        publico: "Dirigido a niños de 9 a 13 años",
+        stock: 5        
+    },
+    {
+        id: 3,
+        nombre: "Programación para docentes de colegio",
+        precio: "S/ .150",
+        horario: "L-M de 7:00 a 9:00 pm",
+        modalidad: "Sincrónico y clases prácticas",
+        duracion: "8 sesiones de 1.30h",
+        docente: "Elian Rivero",
+        fechaInicio: "Proximamente ",
+        imagen: 'curso 3.png',
+        descripcion: "Este taller busca potenciar el desarrollo creativo y el pensamiento computacional de tus hijos, de manera ágil y divertida. Los pequeños tendrán su primera experiencia creando tecnología, desarrollando al máximo su pensamiento lógico.",
+        publico: "Dirigido a profesores de educación básica regular",
+        stock: 5        
+    },
+    {
+        id: 4,
+        nombre: "Bootcamp de programación en Python",
+        precio: "S/. 450",
+        horario: "J - S de 6:00 a 8:30 pm",
+        modalidad: "Sincrónico y clases prácticas",
+        duracion: "8 sesiones de 1.30h",
+        docente: "Jorge Montes",
+        fechaInicio: "Proximamente ",
+        imagen: 'programming-motivation.jpg',
+        descripcion: "Este taller busca potenciar el desarrollo creativo y el pensamiento computacional de tus hijos, de manera ágil y divertida. Los pequeños tendrán su primera experiencia creando tecnología, desarrollando al máximo su pensamiento lógico.",
+        publico: "Dirigido cualquier persona mayor de 18 años",
+        stock: 25        
+    },
+    
+]
+
+const eventosInfo =[
+    {
+        idEvento: '01',
+        nombreEvento: "Taller de creación de videojuegos",
+        precioEvento: "Gratis",
+        ponenteEvento: "Ruth Huillca",
+        fechaEvento: "14 de julio",
+        imagenEvento: 'POPUP.png',
+        linkEvento: 'https://forms.gle/4Yj2QhsL5J1QGQJd6',
+    },
+    {
+        idEvento: '02',
+        nombreEvento: "Taller de creación de aplicaciones para niños",
+        precioEvento: "Gratis",
+        ponenteEvento: "Ruth Huillca",
+        fechaEvento: "14 de agosto",
+        imagenEvento: 'taller1.png',
+        linkEvento: 'https://forms.gle/4Yj2QhsL5J1QGQJd6',
+    },
+    {
+        idEvento: '03',
+        nombreEvento: "Taller de pensamiento computacional",
+        precioEvento: "Gratis",
+        ponenteEvento: "Ruth Huillca",
+        fechaEvento: "06 de setiembre",
+        imagenEvento: 'taller.png',
+        linkEvento: 'https://forms.gle/4Yj2QhsL5J1QGQJd6',
+    },
+]

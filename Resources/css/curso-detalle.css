@@ -1,0 +1,310 @@
+/*GENERALES*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+  }
+  
+  .contenedor{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .titulo-seccion{
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  h2{
+    color: #0089E0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  h4{
+    color: #816AEC;
+    border-bottom: solid #36F1CD 1px;
+
+  }
+  
+  p{
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+
+  
+/* ------ ENCABEZADO ------ */
+
+.menu-bar-pc{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(255,255,255, 0.15);
+    padding: 0 36px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .logo{
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .logo img{
+    width: 100%;
+    vertical-align: top;
+  }
+  
+  .menu-principal a, .top-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #816AEC;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.876rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+  .top-redes .register{
+    color: #fff;
+    text-align: left;
+  }
+  .top-redes .register:hover{
+    background: #FE972C;
+    text-align: left;
+  }
+  .register{
+    display: block;
+    background: #816AEC;
+    color: #F3F4FA;
+    width: 36%;
+    margin:auto;
+    border-radius: 5px;
+    transition: .2s;
+  }
+  .login{
+    display: block;
+    border: solid #816AEC 1px;
+    margin:auto;
+    border-radius: 5px;
+  }
+  .top-redes .login{
+    color: #816AEC;
+  }
+  
+  .menu-principal a:last-child, .top-redes a:last-child{
+    padding-right: 0;
+  }
+  
+  .top-redes a i{
+    font-size: 1rem;
+  }
+  
+  .menu-principal a:hover{
+    color: #36F1CD;
+  }
+  .line{
+    opacity: 10%;
+  }
+  
+  .fixed-header{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    padding: 0 36px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all .4s ease;
+    margin-top: -68px;
+  }
+  
+  .fixed-header .menu-principal a, .fixed-header .top-redes a{
+    color: #444444;
+  }
+  
+  .fixed-header .menu-principal a:hover{
+    color: #36F1CD;
+  }
+  
+  /*Mobile menu*/
+  .menu-mobile{
+    display: none;
+  }
+    /*----- DESCRIPCION DEL CURSO ------*/
+.course{
+    background: #FFF;
+    padding: 100px 0 54px 0;
+    }
+.contenedor-curso{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.curso-curricula h6{
+    color: #816AEC;
+    font-size: 0.9rem;
+}
+li{
+    list-style: none;
+    font-size: 0.8rem;
+    line-height: 150%;
+    color: #979797;
+}
+.curso-curricula ul{
+    line-height: 150%;
+}
+
+.curso-contenido{
+    width: 100%;
+    grid-column: 1/3;
+}
+.curso-pago{
+    transition: .2s;
+    background-color: #161A42;
+    border: solid 0.5px #C3C3C3;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 150px;
+    box-shadow: rgba(255,255,255, 0.15);
+}
+.curso-pago-sticky{
+    position: sticky;
+    top: calc(2rem + 50px);
+    z-index: 101;
+    opacity: 1;
+    transition: top .25s ease-in-out;
+    transition-property: top;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    animation: 5s ease-in-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+.pago-caja{
+    margin: 20px;
+}
+.pago-caja h2{
+    color: #FFF;
+    text-align: center;
+}
+
+.precio a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: rgb(16,249,186);
+    background: linear-gradient(341deg, rgba(16,249,186,1) 0%, rgba(129,106,236,1) 100%);
+    color: #FFF;
+    width: 80%;
+    margin:auto;
+    border-radius: 5px;
+    transition: .2s;
+    text-align: center;
+}
+.precio a:hover{
+    background: #0089e0;
+    color: #fff;
+}
+.info-general{
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+.icon-des{
+    text-align: center;
+    color: #32322C;
+    padding-right: 15px;
+    margin: 5px;
+    border-right: solid #C3C3C3 1px;
+}
+
+
+
+    /* ------ PIE DE PÁGINA ------ */
+
+footer{
+    background: #f3f4fa;
+    padding: 54px 0;
+    text-align: center;
+  }
+  
+footer .copy{
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+footer .logo-footer img{
+    width: 15%;
+    margin: 1.5%;
+}
+  
+footer .footer-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+  
+  footer .footer-redes a:hover{
+    color: #0089E0;
+  }
+  footer .footer2{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 0 10%;
+}
+footer .footer2 a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }

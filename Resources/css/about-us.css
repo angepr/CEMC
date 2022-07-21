@@ -1,0 +1,238 @@
+/*GENERALES*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+  }
+  
+  .contenedor{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .titulo-seccion{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .titulo-seccion h2{
+    color: #0089E0;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .titulo-seccion p{
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+/* ------ ENCABEZADO ------ */
+
+.menu-bar-pc{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(255,255,255, 0.15);
+    padding: 0 36px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .logo{
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .logo img{
+    width: 100%;
+    vertical-align: top;
+  }
+  
+  .menu-principal a, .top-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.876rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+  
+  .menu-principal a:last-child, .top-redes a:last-child{
+    padding-right: 0;
+  }
+  
+  .top-redes a i{
+    font-size: 1rem;
+  }
+  
+  .menu-principal a:hover, .top-redes a:hover{
+    color: #FE972C;
+  }
+  
+  .fixed-header{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    padding: 0 36px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all .4s ease;
+    margin-top: -68px;
+  }
+  
+  .fixed-header .menu-principal a, .fixed-header .top-redes a{
+    color: #444444;
+  }
+  
+  .fixed-header .menu-principal a:hover, .top-redes a:hover{
+    color: #FE972C;
+  }
+  
+  /*Mobile menu*/
+  .menu-mobile{
+    display: none;
+  }
+
+/* portada */
+.banner-us{
+  width: 100%;
+  margin-top: -68px;
+  position: relative;
+}
+
+.banner-us{
+  width: 100%;
+  height: 95vh;
+  background: rgb(16,249,186);
+  background: linear-gradient(0deg, rgba(16,249,186,1) 0%, rgba(129,106,236,1) 54%);
+}
+.banner-us-secundario{
+  padding: 10%;
+}
+.grid-us{
+  justify-content: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5%;
+}
+.texto-banner{
+  color: #FFF;
+}
+.banner-us .text-banner h1{
+  font-size: 200px;
+}
+
+/*------- QUIENES SOMOS --------*/
+.us{
+  background: #F3F4FA;
+  padding: 100px 0 54px 0;
+  }
+.partners-code{
+  padding: 100px 0 104px 0;
+}
+.img-partners{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr) ;
+  gap: 5%;
+}
+.img-partner {
+  min-width: 200px;
+  max-width: 200px;
+  height: 100px;
+}
+
+.img-partner img{
+  width: 100%;
+  height: auto;
+}
+
+ /* ------ PIE DE PÁGINA ------ */
+
+ footer{
+    background: #f3f4fa;
+    padding: 54px 0;
+    text-align: center;
+  }
+  
+footer .copy{
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+footer .logo-footer img{
+    width: 15%;
+    margin: 1.5%;
+}
+  
+footer .footer-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+  
+  footer .footer-redes a:hover{
+    color: #0089E0;
+  }
+  footer .footer2{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 0 10%;
+}
+footer .footer2 a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+  
+  @media screen and (max-width: 600px){ 
+    .cards{
+        flex-direction:column;
+    }
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .eventos .contenedor h2{
+        size: 0.3rem;
+    }
+  }

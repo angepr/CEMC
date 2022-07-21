@@ -1,0 +1,477 @@
+/*GENERALES*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+  }
+  
+  .contenedor{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .titulo-seccion{
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  .titulo-seccion h2{
+    color: #0089E0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .titulo-seccion p{
+    color: #979797;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  
+/* ------ ENCABEZADO ------ */
+
+.menu-bar-pc{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(255,255,255, 0.15);
+    padding: 0 36px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .logo{
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .logo img{
+    width: 100%;
+    vertical-align: top;
+  }
+  
+  .menu-principal a, .top-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.876rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+  .top-redes a{
+    color: #816AEC;
+  }
+  
+  .menu-principal a:last-child, .top-redes a:last-child{
+    padding-right: 0;
+  }
+  
+  .top-redes a i{
+    font-size: 1rem;
+  }
+  
+  .menu-principal a:hover, .top-redes a:hover{
+    color: #FE972C;
+  }
+  .line{
+    opacity: 10%;
+  }
+  
+  .fixed-header{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    padding: 0 36px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all .4s ease;
+    margin-top: -68px;
+  }
+  
+  .fixed-header .menu-principal a, .fixed-header .top-redes a{
+    color: #444444;
+  }
+  
+  .fixed-header .menu-principal a:hover{
+    color: #36F1CD;
+  }
+  
+  /*Mobile menu*/
+  .menu-mobile{
+    display: none;
+  }
+/* -------banner principal-------- */
+  .portada{
+    width: 100%;
+    margin-top:-70px;
+    box-sizing: border-box;
+  }
+  .portada .portada-principal{
+    display: grid;
+    grid-template-columns: 67% 33%
+  }
+  #carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    animation: slide 20s ease infinite;
+}
+
+.slides {
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slides::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(114,110,255);
+    background: linear-gradient(242deg, rgba(114,110,255,0.8911939775910365) 0%, rgba(16,249,186,0.3309698879551821) 100%);
+}
+
+.slide-data {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20%;
+}
+
+.slide-1 {
+    background-image: url(../imagenes/hora-codigo.png);
+}
+
+.slide-2 {
+    background-image: url(../imagenes/waiting-room-with-monitors.jpg);
+}
+
+.slide-3 {
+    background-image: url(../imagenes/luis-optimizado.jpg);
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    35% {
+        left: -100%;
+    }
+
+    70% {
+        left: -200%;
+    }
+}
+
+.portada-texto{
+    max-width: 700px;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -40px;
+    background: url(../imagenes/fondo-forms.png);
+    background-size: 200%;
+    object-fit: cover;
+    border-radius: 30px 0 0 30px;
+    z-index: 1;
+}
+.elementos-texto{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.elementos-texto{
+    margin: 15%;
+    align-content: center;
+    
+}
+
+  /*------ FORMULARIO -----*/
+  .forms{
+    background: #fff;
+    width: 100%;
+    padding: 30px;
+}
+
+.forms h2{
+    font-size: 1.3rem;
+    line-height: 24px;
+    color: #816AEC;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.form p{
+    color: #816AEC;
+    font-size: 0.5rem;
+    font-weight: 400px;
+    margin-bottom: 30px;
+}
+
+.forms form input[type="text"], .forms form input[type="email"], .forms form input[type="number"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.forms input[type="submit"]{
+width: 100%;
+border: none;
+border: 3px solid #816AEC;
+padding: 8px;
+background-color: #fff;
+font-size: 0.9rem;
+font-family: 'poppins', sans-serif;
+letter-spacing: 0.5px;
+cursor: pointer;
+transition: all .7s ease;
+}
+
+.forms input[type="submit"]:hover{
+    background: #00ebc7;
+    color: #FFF;
+    border: solid #00ebc7 2px;
+}
+
+.forms .models{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*Validacion formulario*/
+
+ .forms form .error{
+    display: none;
+    color: #ff8c8c;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+
+  /* ------ EVENTOS ------ */
+  .columnas{
+    margin-top: 54px;
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 640px;
+}
+.categorias{
+    width: 20%;
+}
+
+.event{
+    width: 100%;
+}
+
+.event{
+    background: #FFF;
+    padding: 34px 0 0px 0;
+    }
+.event h2{
+    color: #fff;
+}
+
+.categorias li{
+    list-style: none;
+}
+.categorias a{
+    text-decoration: none;
+}
+.categorias a:hover{
+    color: #36F1CD;
+}
+
+ .cat-eventos-online, .cat-eventos-nuevos{
+    font-size: 15px;
+}
+.eventos-nuevos-list{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    grid-gap: 20px;
+    max-width: 1500px;
+    margin: 20px;
+}
+.evento{
+    display: grid;
+    grid-template-columns: 63% 37%;
+    transition: .2s;
+    background-color: #FFF;
+    border: solid 1px #c3c3c3;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.evento:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 6px 1px rgba(0, 0,0, .1);
+}
+.evento-header{
+    width: 100%;
+    height: 200px;
+    cursor: pointer; 
+}
+.evento-body{
+    margin: 15px;
+    text-align: center;
+}
+ .evento-body span{
+    font-size: 0.7rem;
+    display: inline-block;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+.evento-body h5{
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+.evento-body p{
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.evento-body .evento-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #816AEC;
+    color: #FFF;
+    width: 50%;
+    margin:auto;
+    border-radius: 10px;
+    transition: .2s;
+}
+.evento-body .evento-link:hover{
+    background: #10F9BA;
+} 
+
+   /*--------EVENTOS PASADOS---------*/
+.eventos-pasados{
+    background: #816AEC;
+    padding: 30px 0 54px 0;
+    }
+
+.titulo-seccion h2{
+    color: #fff;
+    }
+
+.eventos .contenedor p{
+    color: #10F9BA;
+    }
+.grid-evento{
+    display: flex;
+    gap: 2%;
+}
+
+   /* ------ PIE DE PÁGINA ------ */
+
+footer{
+    background: #f3f4fa;
+    padding: 54px 0;
+    text-align: center;
+  }
+  
+footer .copy{
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+footer .logo-footer img{
+    width: 15%;
+    margin: 1.5%;
+}
+  
+footer .footer-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+  
+  footer .footer-redes a:hover{
+    color: #0089E0;
+  }
+  footer .footer2{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 0 10%;
+}
+footer .footer2 a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+  }
+

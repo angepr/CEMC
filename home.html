@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/css/code.css">
+    <title>Code en mi Cole</title>
+</head>
+
+
+<body>
+<header>
+ <!-- Versión móvil -->
+    <div class="menu-mobile">
+        <div class="barra">
+        <a href="#" class="logo">
+            <img src="./Resources/imagenes/Recurso 11@3x.png" alt="Logo Code en mi Cole">
+        </a>
+        <a href="#" id="btnMenu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        </div>
+        <nav class="menu-principal">
+            <a href="#" class="volver-arriba">INICIO</a>
+            <a href="./HTML/products.html">CURSOS</a>
+            <a href="./HTML/events.html">EVENTOS</a>
+            <a href="./HTML/about-us.html">CONÓCENOS</a>
+            <!-- <a href="./html/login.html">INICIAR SESIÓN</a>
+            <a href="./html/sign-in.html">REGISTRATE</a> -->
+        </nav>
+    </div>
+
+  <!-- Versión escritorio -->
+    <div class="menu-bar-pc">
+        <a href="#" class="logo">
+            <img src="./Resources/imagenes/Recurso 11@3x.png" alt="Code en mi Cole">
+        </a>
+
+        <nav class="menu-principal">
+            <a href="#" class="volver-arriba">INICIO</a>
+            <a href="./HTML/products.html" class="scroll-suave">CURSOS</a>
+            <a href="./HTML/events.html" class="scroll-acercaDe">EVENTOS</a>
+            <a href="./HTML/about-us.html" class="scroll-equipo">CONÓCENOS</a>
+            <!-- <a class="btn-login" href="./html/login.html">INICIAR SESIÓN</a>
+            <a class="btn-sign" href="./html/sign-in.html">REGISTRATE</a> -->
+        </nav>
+
+        <div class="top-redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+    <div class="fixed-header" id="fixedHeader">
+        <a href="#"  class="logo"><img src="./Resources/imagenes/Recurso 11@3x.png" alt="Logo Code en mi Cole"></a>
+        <nav class="menu-principal">
+            <a href="#" class="volver-arriba">INICIO</a>
+            <a href="./HTML/products.html">CURSOS</a>
+            <a href="./HTML/events.html">EVENTOS</a>
+            <a href="./HTML/about-us.html">CONÓCENOS</a>
+            <a href="./HTML/login.html">INICIAR SESIÓN</a>
+            <a href="./HTML/sign-in.html">REGISTRATE</a>
+        </nav>
+        <div class="top-redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>     
+    
+    
+    
+    <section class="banner">
+<!-- banner -->
+    <section class="banner-principal">
+        <div class="banner-secundario" id="banner"></div>
+        <div>
+            <div class="texto-banner">
+            <h1>Transformando generaciones<br> en creadores tecnológicos</h1>
+            <a href="./products.html">Ver cursos</a>
+        </div>
+        </div> 
+    </section>
+<!-- cursos -->
+    <section class="cursos" id="cursos">
+        <div class="contenedor">
+            <div class="titulo-seccion">
+                <h2>Cursos</h2>
+                <p>Aprende a programar a cualquier edad</p>
+            </div>
+            <div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Resources/imagenes/curso 3.png" alt="">
+                        <div class="card-descripcion">
+                            <div class="card-titulo">
+                                <h4>Creación de aplicaciones para niños</h4>
+                            </div>
+                            <div class="card-texto">
+                                <p>Docente: Ruth Huillca</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Resources/imagenes/curso 1.png" alt="">
+                        <div class="card-descripcion">
+                            <div class="card-titulo">
+                                <h4>Creación de videojuegos</h4>
+                            </div>
+                            <div class="card-texto">
+                                <p>Docente: Ruth Huillca</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Resources/imagenes/curso 2.png" alt="">
+                        <div class="card-descripcion">
+                            <div class="card-titulo">
+                                <h4>Bootcamp de programación en Python</h4>
+                            </div>
+                            <div class="card-texto">
+                                <p>Docente: Ruth Huillca</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Resources/imagenes/curso 3.png" alt="">
+                        <div class="card-descripcion">
+                            <div class="card-titulo">
+                                <h4>Programación para docentes</h4>
+                            </div>
+                            <div class="card-texto">
+                                <p>Docente: Ruth Huillca</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Resources/imagenes/curso 1.png" alt="">
+                        <div class="card-descripcion">
+                            <div class="card-titulo">
+                                <h4>Programación para docentes</h4>
+                            </div>
+                            <div class="card-texto">
+                                <p>Docente: Ruth Huillca</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Resources/imagenes/curso 2.png" alt="">
+                        <div class="card-descripcion">
+                            <div class="card-titulo">
+                                <h4>Programación para docentes</h4>
+                            </div>
+                            <div class="card-texto">
+                                <p>Docente: Ruth Huillca</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- eventos -->
+    <section class="eventos" id="eventos">
+        <div class="contenedor">
+            <div class="titulo-seccion">
+                <h2>Eventos</h2>
+                <p>Da tus primeros pasos de programación</p>
+            </div>
+            <div class="cards">
+                <div class="card-evento">
+                    <img src="./Resources/imagenes/event1.png" alt="">
+                    <h3>Talleres gratuitos de programación</h3>
+                    <p>Todos nuestros talleres son gratis.</p>
+                    <a href="">Regístrate</a>
+                </div>
+                <div class="card-eventos">
+                    <div class="card-evento-arriba">
+                        <img src="Resources/imagenes/event2.png" alt="">
+                        <h3>Hora del Código Perú</h3>
+                        <p class="p-card-one">Acerquemos el código a todos los colegios del Perú y del Mundo.</p>
+                        <!-- <a href="">Más información</a> -->
+                    </div>
+                    <div class="card-evento-abajo">
+                        <img src="./Resources/imagenes/event3.png" alt="">
+                        <h3>Computer Science Education Conference</h3>
+                        <p class="p-card-two">Una experiencia inmersiva sobre la ciencia de la computación en la docencia.</p>
+                        <!-- <a href="">Más información</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contador" id="contador">
+        <div class="counting">
+            <div class="inner-div">
+                <div class="columna">
+                    <i style="color: #fff;" class="fa-solid fa-child-reaching"></i>
+                    <h3><span class="number">10500</span></h3>
+                    <p>Estudiantes impactados</p>
+                </div>
+                <div class="columna">
+                    <i style="color: #fff;" class="fa-solid fa-person-chalkboard"></i>
+                    <h3><span class="number">1000</span></h3>
+                    <p>Docentes impactados</p>
+                </div>
+                <div class="columna">
+                    <i style="color: #fff;" class="fa-solid fa-mountain-city"></i>
+                    <h3><span class="number">20</span></h3>
+                    <p>Ciudades Nacionales e Internacionales</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- partners -->
+    <section class="partners" id="partners">
+        <div class="contenedor">
+            <div class="titulo-seccion">
+                <h2>Partners</h2>
+            </div>
+            <div class="carrusel">
+                <div class="carrusel-items" id="carrusel-items">
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/Copia de International signature - black.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/DREA AQP.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/FNF Logo.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/Foro STEAM+H-05.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/LIMA color-1.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/logo startupPerú.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/LOGO STEAM+H-05.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/logo ugel aqp sur.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/LOGO_EXPLORA-1.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./Resources/imagenes/logos/Ministerio_de_la_Producción.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- blog -->
+    <section class="blog" id="blog">
+        <div class="contenedor">
+            <div class="titulo-seccion">
+                <h2>Blog</h2>
+            </div>
+            <div class="post-list">
+                <div class="content" id="idPostList">
+                    <article class="post" id="post-1">
+                        <div class="post-header">
+                            <div class="post-img-1"></div>
+                        </div>
+                        <div class="post-body">
+                            <span class="fecha-blog" id="fecha-blog">7 de julio de 2022</span>
+                            <h5 class="titulo-blog">Título del artículo</h5>
+                            <p class="texto-blog">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis deleniti fugiat debitis, sunt nostrum. Dolorum sapiente sunt suscipit id aliquid ea eius dolor.</p>
+                            <a href="" class="post-link">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-img-2"></div>
+                        </div>
+                        <div class="post-body">
+                            <span id="post-fecha">7 de julio de 2022</span>
+                            <h5 id="post-titulo">Título del artículo</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis deleniti fugiat debitis, sunt nostrum. Dolorum sapiente sunt suscipit id aliquid ea eius dolor.</p>
+                            <a href="" class="post-link">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-img-3"></div>
+                        </div>
+                        <div class="post-body">
+                            <span>7 de julio de 2022</span>
+                            <h5>Título del artículo</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis deleniti fugiat debitis, sunt nostrum. Dolorum sapiente sunt suscipit id aliquid ea eius dolor.</p>
+                            <a href="" class="post-link">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de página -->
+    <footer>
+        <div class="copy">
+            <div class="logo-footer">
+            <img src="Resources/imagenes/logo sin complemento.png" alt="">
+            </div>
+            <p>Code en mi Cole</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="footer-redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <section class="footer2">
+            <section class="telefono">
+                <div class="espacio-der">
+                    <i class="fa-solid fa-phone" height="30px"></i>
+                </div>
+                <div>
+                    <a>+51 974 210 246</a>
+                </div>
+            </section>
+            <section class="contacto">
+                <div class="espacio-der">
+                    <i class="fa-solid fa-envelope" height="30px"></i>
+                </div>
+                <div>
+                    <a>contacto@codenmicole.com</a>
+                </div>
+            </section>
+            <section class="direccion"> 
+                <div class="espacio-der">
+                    <i class="fa-solid fa-location-dot" height="30px"></i>
+                </div>
+                <div>
+                    <a>Av. Salaverry 301</a>
+                    <a>Arequipa - Perú</a>
+                </div>
+            </section>
+    
+        </section>
+      </footer>
+</body>
+<script src="https://kit.fontawesome.com/233512eda9.js" crossorigin="anonymous"></script>
+<script src="./Resources/frameworks/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script src="./Resources/js/code.js"></script>
+<script src="./Resources/js/blog.js"></script>
+</html>
