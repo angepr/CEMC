@@ -9,7 +9,7 @@ function addEvent() {
         $("#idContentEvento").append(`<div class="evento">
             <div class="evento-header">
                 <div class="evento-img-1">
-                    <img style="width: 100%; height: 200px; background-size: cover; object-fit: cover; background-position: center; transition: .2s; border-bottom-left-radius: 10px; border-top-left-radius: 10px;" src="./Resources/imagenes/${eventosInfo[i].imagenEvento}" alt="${eventosInfo[i].nombreEvento}">
+                    <img style="width: 100%; height: 200px; background-size: cover; object-fit: cover; background-position: center; transition: .2s; border-bottom-left-radius: 10px; border-top-left-radius: 10px;" src="../Resources/imagenes/${eventosInfo[i].imagenEvento}" alt="${eventosInfo[i].nombreEvento}">
                 </div>
             </div>
             <div class="evento-body">
