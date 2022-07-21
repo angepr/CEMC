@@ -12,7 +12,7 @@ function addCourse() {
         <div class="curso">
           <div class="curso-header">
             <div class="curso-img-1">
-            <a href="./course.html?id=${productos[p].id}"><img style="width: 100%; height: 200px; background-size: cover; object-fit: cover; background-position: center; transition: .2s; border-top-right-radius: 10px; border-top-left-radius: 10px;" src="./Resources/imagenes/${productos[p].imagen}" alt="${productos[p].nombre}"></a>
+            <a href="./course.html?id=${productos[p].id}"><img style="width: 100%; height: 200px; background-size: cover; object-fit: cover; background-position: center; transition: .2s; border-top-right-radius: 10px; border-top-left-radius: 10px;" src="../Resources/imagenes/${productos[p].imagen}" alt="${productos[p].nombre}"></a>
             </div>
           </div>
           <div class="curso-body">
